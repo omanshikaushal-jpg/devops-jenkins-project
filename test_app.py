@@ -10,4 +10,4 @@ def client():
 def test_home_page(client):
     response = client.get('/')
     assert response.status_code == 200
-    assert b"Hello! DevOps Pipeline v2.0 is Live & Automated!" in response.data
+    assert b"Hey Team!! DevOps Pipeline v2.0 is Live & Automated!" in response.data
